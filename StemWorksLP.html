@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>StemworksLP</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+	.text-block-center {
+  position: absolute;
+  bottom: 60%;
+  right: 42%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  opacity: 0.8;
+}
+
+	.container {
+  position: relative;	
+}
+	.padd {
+padding-left: 280px;
+padding-right: 280px;
+}
+	.fixed-bg {
+background-image: url("PaperCutContour.png");
+min-height: 830px;
+background-attachment: fixed;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+	/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+	.header-center{
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: .5px;
+		text-align: center;
+		word-spacing: 1px;
+		padding-top: 50px;
+		
+		
+	}
+	.text-right{
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: .5px;
+		text-align: right;
+		float:right;
+		word-spacing: 1px;
+		padding-top: 50px;
+	}
+	.image-padd{
+		padding-top: 50px;
+		float: left;
+		
+		
+	}
+	.blackcolor{
+		background-color: #252525;
+		color:aliceblue;
+		overflow: hidden;
+	}
+body,td,th {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+</style>
+</head>
+
+<body>
+<div id="navbar">
+  <a href="#home">MHS</a>
+  <a href="#news">Projects</a>
+  <a href="#contact">About</a>
+</div>
+
+<div class="fixed-bg"> </div>
+	<div class="text-block-center"> 
+		<font size="7">STEMworks</font>
+    </div>
+	
+
+<!-- above is the backgrounf .dont mess with it , it currently to work  -->
+	<div> </div>
+
+<div class = "padd header-center " >
+		<br> <!-- super important <br>, makes the top padding more prominent  --> <font size="5" class="header-center"> &nbsp;"Stem is the most amazing thing i've ever done. Im so glad I get to be apart of a community that really changes the world." </font> <br> <div class = "text-right"><font> -Ben Stumem</font></div>
+	<br><br><br><br>
+	</div>
+
+<section class= "padd blackcolor">
+	<div class= "image-padd">  
+		 <font  class= "text-right" size= "4" style="float:right"> <img src="STEM_Academy-Logo.jpeg" width="344" height="483" alt="" style= "float:left"/>  <br> what do we do? rjhke jhgkjer hkj ehfkjhegkjeh gkjnkek kgjkergkj ejgkej hgkwejrk hwerkjg herkferfj ojrlkfjef kewsiotm gjw senrfkjnwd lkewjfowerkf kerjgoieiarjfkerjfioew k. figure out how to padd stuff better. probablt mayve actually learn it . stuff would look alot nicer. also.. i need to make a better landing page than just image with some stuff taking up 800 px of the screen. 
+							 <br><br>
+						</font>
+	</div> 
+	
+</section>
+	
+<!-- script below  -->
+<script>
+	window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+		
+	</script>
+</body>
+</html>
